@@ -38,7 +38,8 @@ public class PA extends PagerAdapter {
         TextView tv_pm_val = (TextView)v_table.findViewById(R.id.tv_pm2_5_val);
         TextView tv_o3_val = (TextView)v_table.findViewById(R.id.tv_o3_val);
 
-        try {
+        try
+        {
             JSONObject obj = this.airdata.getJSONObject(position);
             tv_time_val.setText(obj.getString("time"));
             tv_co_val.setText(obj.getString("co"));
